@@ -3,7 +3,7 @@ import { presentation, experiences, projets } from "../data/data";
 
 export default function Home() {
   return (
-    <div className="flex flex-col md:flex-row items-center justify-center h-screen">
+    <div className=" md:flex-row sm: flex flex-col items-center justify-center h-screen">
       <div className="animate__animated animate__fadeInLeft bg-slate-50 h-full w-full flex flex-col items-center justify-center">
         <img src={Logo} alt="logo" width={250} />
         <p className="text-center px-4 italic font-bold text-transparent bg-clip-text bg-gradient-to-r from-[#5271FF] to-[#8C52FF]">
@@ -12,25 +12,32 @@ export default function Home() {
           interactives.
         </p>
       </div>
-      <div className="bg-sky-950 h-full px-4 flex items-center justify-center">
+      <div className="bg-sky-950 h-full px-4 py-4 flex items-center justify-center">
         <div>
-          <code className="font-bold text-[#8C52FF]">Présentation : {"{"}</code>
+          <code className="font-bold text-[#8C52FF] sm:text-sm">
+            Présentation : {"{"}
+          </code>
           {Object.entries(presentation).map(([key, value], index) => (
             <pre key={index}>
               &nbsp;&nbsp;&nbsp;&nbsp;
-              <code className="text-green-600">{key}</code>:{" "}
-              <code className="text-blue-600">"{value}",</code>
+              <code className="text-green-600 sm:text-sm">{key}</code>:{" "}
+              <code className="text-blue-600 sm:text-sm">"{value}",</code>
             </pre>
           ))}
           <code className="font-bold text-[#8C52FF]">{"}"},</code>
           <br />
           <br />
-          <code className="font-bold text-[#8C52FF]">Experience : {"{"} </code>
+          <code className="font-bold text-[#8C52FF]  sm:text-sm">
+            Experience : {"{"}{" "}
+          </code>
           {experiences.map((experience, index) => (
             <pre key={index}>
               &nbsp;&nbsp;&nbsp;&nbsp;
-              <code className="text-green-600">{experience.year}</code>:{" "}
-              <code className="text-blue-600">
+              <code className="text-green-600  sm:text-sm">
+                {experience.year}
+              </code>
+              :{" "}
+              <code className="text-blue-600  sm:text-sm">
                 "{experience.role} @ {experience.company}",
               </code>
             </pre>
@@ -38,12 +45,14 @@ export default function Home() {
           <code className="font-bold text-[#8C52FF]">{"}"},</code>
           <br />
           <br />
-          <code className="font-bold text-[#8C52FF]">Projets : {"{"} </code>
+          <code className="font-bold text-[#8C52FF]  sm:text-sm">
+            Projets : {"{"}{" "}
+          </code>
           {Object.entries(projets).map(([key, value], index) => (
             <pre key={index}>
               &nbsp;&nbsp;&nbsp;&nbsp;
-              <code className="text-green-600">{key}</code>:{" "}
-              <code className="text-blue-600">
+              <code className="text-green-600  sm:text-sm">{key}</code>:{" "}
+              <code className="text-blue-600  sm:text-sm ">
                 <a href={value} target="_blank" rel="noreferrer">
                   "{value}"
                 </a>
