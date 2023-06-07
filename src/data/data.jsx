@@ -31,5 +31,5 @@ export const projets = {
   tigato: "https://github.com/illshaad/Tigato",
   backTigato: "https://github.com/illshaad/micro-back-tigato",
   food: "https://github.com/illshaad/projet-food",
-  portfoliot: "https://github.com/illshaad/porfoliot",
+  portfolio: "https://github.com/illshaad/porfoliot",
 };
