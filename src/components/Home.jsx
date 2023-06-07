@@ -14,9 +14,9 @@ export default function Home({ nextStep }) {
 
       <span
         onClick={() => nextStep(1)}
-        className="cursor-pointer px-4 pt-2 italic font-bold text-transparent bg-clip-text bg-gradient-to-r from-[#5271FF] to-[#8C52FF]  sm: text-sm "
+        className="cursor-pointer px-4 pb-4 italic font-bold text-transparent bg-clip-text bg-gradient-to-r from-[#5271FF] to-[#8C52FF]  sm: text-sm "
       >
-        Venez m'ecrire un message je ne mort pas !
+        Venez m'écrire un message je ne mords pas !
       </span>
     </div>
   );

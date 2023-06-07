@@ -2,7 +2,7 @@ import { presentation, experiences, projets } from "../data/data";
 
 export function Code() {
   return (
-    <div className="bg-sky-950 h-full px-16 py-4 flex items-center justify-center sm: h-screen">
+    <div className="bg-sky-950 h-full   flex items-center justify-center sm: p-12 ">
       <div>
         <code className="font-bold text-[#8C52FF] sm: text-sm">
           Présentation : {"{"}

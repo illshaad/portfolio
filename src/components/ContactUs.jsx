@@ -1,25 +1,31 @@
 import emailjs from "@emailjs/browser";
+import { useState } from "react";
 import { useRef } from "react";
+import Alerts from "./Alerts";
 
 export default function ContactUs({ prevStep }) {
   const form = useRef();
-  const sendEmail = (e) => {
+  const [visible, setVisible] = useState(false);
+
+  const sendEmail = async (e) => {
     e.preventDefault();
-    emailjs
-      .sendForm(
+
+    try {
+      const result = await emailjs.sendForm(
         import.meta.env.VITE_APP_SERVICE_ID,
         import.meta.env.VITE_APP_TEMPLATE_ID,
         form.current,
         import.meta.env.VITE_APP_PUBLIC_KEY
-      )
-      .then(
-        (result) => {
-          result && prevStep(0);
-        },
-        (error) => {
-          console.log(error.text);
-        }
       );
+
+      result && setVisible(true);
+
+      setTimeout(() => {
+        prevStep(0);
+      }, 6000);
+    } catch (error) {
+      console.log(error.text);
+    }
   };
 
   return (
@@ -34,7 +40,7 @@ export default function ContactUs({ prevStep }) {
             intéressants nous aborderons ensemble.
           </p>
         </div>
-
+        {visible && <Alerts />}
         <form
           ref={form}
           onSubmit={sendEmail}
@@ -83,12 +89,19 @@ export default function ContactUs({ prevStep }) {
               ></textarea>
             </div>
           </div>
-
-          <input
-            value="Envoyer"
-            type="submit"
-            className="px-4 py-2 bg-gray-800 text-white rounded-md cursor-pointer"
-          />
+          <div className="flex gap-10">
+            <input
+              value="Envoyer"
+              type="submit"
+              className="px-4 py-2 bg-gray-800 text-white rounded-md cursor-pointer"
+            />
+            <input
+              onClick={() => prevStep(0)}
+              value="Retour"
+              type="submit"
+              className=" cursor-pointer font-bold text-transparent bg-clip-text bg-gradient-to-r from-[#5271FF] to-[#8C52FF]"
+            />
+          </div>
         </form>
       </div>
     </div>
