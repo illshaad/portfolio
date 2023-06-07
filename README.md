@@ -1,1 +1,1 @@
-# Simple porfoliot (React/Vite/Tailwind)
+# Simple porfoliot (React/Vite/Tailwind/EmailJs)
