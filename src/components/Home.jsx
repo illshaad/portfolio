@@ -3,7 +3,7 @@ import Button from "./Button";
 import PropTypes from "prop-types";
 export default function Home({ nextStep }) {
   return (
-    <div className="animate__animated animate__fadeInLeft bg-slate-50  w-full flex flex-col items-center justify-center sm: pb-6 sm: h-screen">
+    <div className="animate__animated animate__fadeInLeft w-full flex flex-col items-center justify-center sm: pb-6">
       <img src={Logo} alt="logo" width={250} />
       <p className=" text-center px-4 pb-6 italic font-bold text-transparent bg-clip-text bg-gradient-to-r from-[#5271FF] to-[#8C52FF]  sm: text-sm ">
         En tant que développeur web full-stack, j'utilise React, React-Native,

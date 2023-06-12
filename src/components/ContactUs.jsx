@@ -29,8 +29,8 @@ export default function ContactUs({ prevStep }) {
   };
 
   return (
-    <div className="animate__animated animate__fadeInLeft bg-slate-50 w-full flex flex-col items-center justify-center sm: pb-6 sm: h-screen">
-      <div className="mx-auto max-w-screen-xl px-4 py-16 sm: px-6 lg: px-8">
+    <div className="animate__animated animate__fadeInLeft  w-full  flex flex-col items-center justify-center sm: pb-6">
+      <div className="mx-auto max-w-screen-xl px-4 py-16 sm: px-6 lg: px-8 shadow">
         <div className="mx-auto max-w-lg text-center">
           <h1 className="text-2xl font-bold sm:text-3xl italic font-bold text-transparent bg-clip-text bg-gradient-to-r from-[#5271FF] to-[#8C52FF]">
             Oui ?
