@@ -20,7 +20,7 @@ function App() {
   ];
 
   return (
-    <div className="md:flex-row sm: flex flex-col items-center justify-center h-screen">
+    <div className="md:flex-row sm: flex flex-col items-center justify-center sm: h-screen">
       <>
         {stepComponent[step]}
         <Code />
