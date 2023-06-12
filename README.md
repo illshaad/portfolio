@@ -1,1 +1,1 @@
-# Simple porfoliot (React/Vite/Tailwind/EmailJs)
+# Simple portfolio (React/Vite/Tailwind/EmailJs)
