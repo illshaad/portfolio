@@ -15,8 +15,7 @@ export function Code() {
           </div>
         ))}
         <code className="font-bold text-[#8C52FF]">{"}"},</code>
-        <br />
-        <br />
+        <div className="my-2" />
         <code className="font-bold text-[#8C52FF]  sm: text-sm">
           Experience : {"{"}{" "}
         </code>
@@ -33,8 +32,7 @@ export function Code() {
           </div>
         ))}
         <code className="font-bold text-[#8C52FF]">{"}"},</code>
-        <br />
-        <br />
+        <div className="my-2" />
         <code className="font-bold text-[#8C52FF]  sm: text-sm">
           Projets : {"{"}{" "}
         </code>

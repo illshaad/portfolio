@@ -30,7 +30,8 @@ export default function Alerts() {
           <p className="mt-2 text-sm text-gray-700">
             Je vous remercie pour votre message, je vous répondrai dans les plus
             brefs délais.
-            <br /> Vous allez être redirigé vers la page d'accueil.
+            <div className="my-2" /> Vous allez être redirigé vers la page
+            d'accueil.
           </p>
         </div>
       </div>
