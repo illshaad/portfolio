@@ -1,8 +1,9 @@
 import "animate.css";
 import { useState } from "react";
-import ContactUs from "./components/ContactUs";
-import { Code } from "./components/Code";
-import Home from "./components/Home";
+import ContactUs from "./components/portfolio/ContactUs";
+import { Code } from "./components/portfolio/Code";
+import Home from "./components/portfolio/Home";
+import Blog from "./components/blog/Blog";
 
 function App() {
   const [step, setStep] = useState(0);
@@ -17,6 +18,7 @@ function App() {
   const stepComponent = [
     <Home key="0" nextStep={nextStep} />,
     <ContactUs key="1" nextStep={nextStep} prevStep={prevStep} />,
+    <Blog key="2" nextStep={nextStep} prevStep={prevStep} />,
   ];
 
   return (

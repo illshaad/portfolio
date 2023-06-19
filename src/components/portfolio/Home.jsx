@@ -1,5 +1,5 @@
-import Logo from "../assets/logo.png";
-import Button from "./Button";
+import Logo from "../../assets/logo.png";
+import Button from "../portfolio/Button";
 import PropTypes from "prop-types";
 export default function Home({ nextStep }) {
   return (
@@ -17,6 +17,13 @@ export default function Home({ nextStep }) {
         className="cursor-pointer text-[#5271FF] underline underline-offset-8 px-4 pb-4 italic font-bold sm: text-sm "
       >
         Venez m'écrire un message je ne mords pas !
+      </span>
+
+      <span
+        onClick={() => nextStep(2)}
+        className="cursor-pointer text-[#5271FF] underline underline-offset-8 px-4 pb-4 italic font-bold sm: text-sm "
+      >
+        Blog
       </span>
     </div>
   );

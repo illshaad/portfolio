@@ -1,8 +1,8 @@
-import { presentation, experiences, projets } from "../data/data";
+import { presentation, experiences, projets } from "../../data/portfolio/data";
 
 export function Code() {
   return (
-    <div className="bg-sky-950 h-full   flex items-center justify-center sm: p-12 ">
+    <div className="bg-sky-950 h-full flex items-center justify-center sm: p-12 ">
       <div>
         <code className="font-bold text-[#8C52FF] sm: text-sm">
           Presentation : {"{"}
