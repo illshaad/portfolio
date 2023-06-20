@@ -12,7 +12,7 @@ function App() {
     setStep(step, data);
   };
   const prevStep = () => {
-    setStep((prev) => prev - 1);
+    setStep((prev) => (prev === 2 ? prev - 2 : prev - 1));
   };
 
   const stepComponent = [

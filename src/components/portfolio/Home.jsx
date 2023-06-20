@@ -23,7 +23,7 @@ export default function Home({ nextStep }) {
         onClick={() => nextStep(2)}
         className="cursor-pointer text-[#5271FF] underline underline-offset-8 px-4 pb-4 italic font-bold sm: text-sm "
       >
-        Blog
+        Mon univers
       </span>
     </div>
   );

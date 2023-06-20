@@ -1,9 +1,9 @@
 import PropTypes from "prop-types";
 
-export default function BlogCard({ key, picture, titre, subtitle, link }) {
+export default function BlogCard({ picture, titre, subtitle, link, index }) {
   return (
     <article
-      key={key}
+      key={index}
       className="overflow-hidden rounded-lg border border-gray-100 bg-white shadow-sm max-w-xs"
     >
       <img src={picture} className="h-38 w-full object-cover" />
@@ -31,7 +31,7 @@ export default function BlogCard({ key, picture, titre, subtitle, link }) {
 }
 
 BlogCard.propTypes = {
-  key: PropTypes.number.isRequired,
+  index: PropTypes.number.isRequired,
   picture: PropTypes.string.isRequired,
   titre: PropTypes.string.isRequired,
   subtitle: PropTypes.string.isRequired,

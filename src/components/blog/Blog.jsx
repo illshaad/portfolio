@@ -1,7 +1,7 @@
 import BlogCard from "./BlogCard";
 import { blogData } from "../../data/blog/blog";
 
-export default function Blog() {
+export default function Blog({ prevStep }) {
   return (
     <div className="animate__animated animate__fadeInLeft w-full flex flex-col items-center justify-center sm:pb-6">
       <div className="mx-auto max-w-screen-xl py-16 sm:px-6 lg:px-8">
@@ -29,6 +29,12 @@ export default function Blog() {
           ))}
         </div>
       </div>
+      <button
+        onClick={() => prevStep()}
+        className=" cursor-pointer font-bold text-transparent bg-clip-text bg-gradient-to-r from-[#5271FF] to-[#8C52FF]"
+      >
+        Retour
+      </button>
     </div>
   );
 }

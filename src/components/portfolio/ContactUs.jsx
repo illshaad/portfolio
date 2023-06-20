@@ -22,10 +22,10 @@ export default function ContactUs({ prevStep }) {
       result && setVisible(true);
 
       setTimeout(() => {
-        prevStep(0);
+        prevStep();
       }, 6000);
     } catch (error) {
-      console.log(error.text);
+      console.log(error);
     }
   };
 
@@ -97,7 +97,7 @@ export default function ContactUs({ prevStep }) {
               className="px-4 py-2 bg-gray-800 text-white rounded-md cursor-pointer"
             />
             <input
-              onClick={() => prevStep(0)}
+              onClick={() => prevStep()}
               value="Retour"
               type="submit"
               className=" cursor-pointer font-bold text-transparent bg-clip-text bg-gradient-to-r from-[#5271FF] to-[#8C52FF]"
