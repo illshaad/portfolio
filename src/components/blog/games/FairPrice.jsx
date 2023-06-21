@@ -71,7 +71,7 @@ export default function FairPrice({ prevStep }) {
         </div>
 
         <div
-          className="bg-gray-900 text-white p-4 rounded-lg h-[600px] w-[600px]"
+          className="bg-gray-900 text-white p-4 rounded-lg h-96 w-96"
           style={{ overflowY: "scroll", maxHeight: "300px" }}
         >
           <div>
