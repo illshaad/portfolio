@@ -30,6 +30,7 @@ export default function FairPrice({ prevStep }) {
 
   const fairPrice = (number) => {
     const transform = parseInt(number);
+
     if (isNaN(transform)) {
       return setState((prevState) => ({
         ...prevState,
@@ -69,10 +70,7 @@ export default function FairPrice({ prevStep }) {
           </p>
         </div>
 
-        <div
-          className="bg-gray-900 text-white p-4 rounded-lg h-96 w-96"
-          style={{ overflowY: "scroll", maxHeight: "300px" }}
-        >
+        <div className="bg-gray-900 text-white p-4 rounded-lg h-96 w-96 overflow-y-auto max-h-96">
           <div>
             {output.map((item, index) => (
               <div key={index}>

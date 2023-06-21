@@ -14,10 +14,7 @@ export default function Blog({ prevStep }) {
             j'ai envie de partager avec vous.
           </p>
         </div>
-        <div
-          className="flex flex-wrap gap-10 items-center justify-center"
-          style={{ maxHeight: "450px", overflowY: "auto" }}
-        >
+        <div className="flex flex-wrap gap-10 items-center justify-center overflow-y-auto max-h-96">
           {blogData.map(({ picture, titre, subtitle, link }, index) => (
             <BlogCard
               key={index}
