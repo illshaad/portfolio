@@ -55,7 +55,6 @@ export default function FairPrice({ prevStep }) {
       message: "",
       command: "",
       output: [],
-      random: Math.floor(Math.random() * 10) + 1,
     }));
   };
 
@@ -79,13 +78,11 @@ export default function FairPrice({ prevStep }) {
             {output.map((item, index) => (
               <div key={index}>
                 <span className="text-green-400">$ {item.command}</span>
-                <br />
-                {item.output}
               </div>
             ))}
           </div>
           <div className="mb-2">
-            $ {message}
+            $ {message ? message : "Entrez un nombre"}
             <input
               className="bg-transparent border-none focus:outline-none text-green-400"
               type="text"
