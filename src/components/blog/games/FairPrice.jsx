@@ -45,11 +45,18 @@ export default function FairPrice({ prevStep }) {
       setState((prevState) => ({
         ...prevState,
         message: "Bravo tu as trouvé le juste prix !",
-        command: "",
-        output: [],
-        random: Math.floor(Math.random() * 10) + 1,
       }));
     }
+  };
+
+  const reset = () => {
+    setState((prevState) => ({
+      ...prevState,
+      message: "",
+      command: "",
+      output: [],
+      random: Math.floor(Math.random() * 10) + 1,
+    }));
   };
 
   return (
@@ -65,9 +72,18 @@ export default function FairPrice({ prevStep }) {
         </div>
 
         <div
-          className="bg-gray-900 text-white p-4 rounded-lg w-[600px]"
+          className="bg-gray-900 text-white p-4 rounded-lg h-[600px] w-[600px]"
           style={{ overflowY: "scroll", maxHeight: "300px" }}
         >
+          <div>
+            {output.map((item, index) => (
+              <div key={index}>
+                <span className="text-green-400">$ {item.command}</span>
+                <br />
+                {item.output}
+              </div>
+            ))}
+          </div>
           <div className="mb-2">
             $ {message}
             <input
@@ -79,23 +95,22 @@ export default function FairPrice({ prevStep }) {
               autoFocus
             />
           </div>
-          <div>
-            {output.map((item, index) => (
-              <div key={index}>
-                <span className="text-green-400">$ {item.command}</span>
-                <br />
-                {item.output}
-              </div>
-            ))}
-          </div>
         </div>
       </div>
-      <button
-        onClick={() => prevStep()}
-        className=" cursor-pointer font-bold text-transparent bg-clip-text bg-gradient-to-r from-[#5271FF] to-[#8C52FF]"
-      >
-        Retour
-      </button>
+      <div className="flex gap-10">
+        <button
+          onClick={() => reset()}
+          className=" cursor-pointer font-bold text-transparent bg-clip-text bg-gradient-to-r from-[#5271FF] to-[#8C52FF]"
+        >
+          Reset
+        </button>
+        <button
+          onClick={() => prevStep()}
+          className=" cursor-pointer font-bold text-transparent bg-clip-text bg-gradient-to-r from-[#5271FF] to-[#8C52FF]"
+        >
+          Retour
+        </button>
+      </div>
     </div>
   );
 }
