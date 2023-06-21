@@ -4,7 +4,7 @@ import ContactUs from "./components/portfolio/ContactUs";
 import { Code } from "./components/portfolio/Code";
 import Home from "./components/portfolio/Home";
 import Blog from "./components/blog/Blog";
-import FairPrice from "./components/blog/games/FairPrice";
+import FairPrice from "./components/games/FairPrice";
 
 function App() {
   const [step, setStep] = useState(0);

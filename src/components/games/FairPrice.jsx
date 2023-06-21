@@ -9,7 +9,6 @@ export default function FairPrice({ prevStep }) {
   });
 
   const { message, command, output, random } = state;
-
   const handleInputChange = (e) => {
     setState((prevState) => ({ ...prevState, command: e.target.value }));
   };
@@ -50,12 +49,12 @@ export default function FairPrice({ prevStep }) {
   };
 
   const reset = () => {
-    setState((prevState) => ({
-      ...prevState,
+    setState({
       message: "",
       command: "",
       output: [],
-    }));
+      random: Math.floor(Math.random() * 10) + 1,
+    });
   };
 
   return (
