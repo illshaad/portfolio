@@ -25,6 +25,12 @@ export default function Home({ nextStep }) {
       >
         Mon univers
       </span>
+      <span
+        onClick={() => nextStep(3)}
+        className="cursor-pointer text-[#5271FF] underline underline-offset-8 px-4 pb-4 italic font-bold sm: text-sm "
+      >
+        Mini jeux
+      </span>
     </div>
   );
 }

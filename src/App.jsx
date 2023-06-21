@@ -4,6 +4,7 @@ import ContactUs from "./components/portfolio/ContactUs";
 import { Code } from "./components/portfolio/Code";
 import Home from "./components/portfolio/Home";
 import Blog from "./components/blog/Blog";
+import FairPrice from "./components/blog/games/FairPrice";
 
 function App() {
   const [step, setStep] = useState(0);
@@ -19,6 +20,7 @@ function App() {
     <Home key="0" nextStep={nextStep} />,
     <ContactUs key="1" nextStep={nextStep} prevStep={prevStep} />,
     <Blog key="2" nextStep={nextStep} prevStep={prevStep} />,
+    <FairPrice key="3" nextStep={nextStep} prevStep={prevStep} />,
   ];
 
   return (
