@@ -27,6 +27,8 @@ export const experiences = [
 ];
 
 export const projets = {
+  movie: "https://github.com/illshaad/movie",
+  rh: "https://github.com/illshaad/application-recrutement",
   villeIdeal: "https://github.com/illshaad/projet-ville-ideal-v2",
   tigato: "https://github.com/illshaad/Tigato",
   backTigato: "https://github.com/illshaad/micro-back-tigato",
