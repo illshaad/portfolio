@@ -20,7 +20,7 @@ export const experiences = [
     company: "Doctegestio",
   },
   {
-    year: "Janvier 2023 - Avril 2023",
+    year: "Janvier 2023 - Juillet 2023",
     role: "Developpeur front-end mobile react-native",
     company: "Vinidaily",
   },
