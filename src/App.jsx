@@ -30,10 +30,8 @@ function App() {
 
   return (
     <div className="md:flex-row sm:flex flex-col items-center justify-center h-screen">
-      <>
-        {stepComponent[step]}
-        <Code />
-      </>
+      {stepComponent[step]}
+      <Code />
     </div>
   );
 }
