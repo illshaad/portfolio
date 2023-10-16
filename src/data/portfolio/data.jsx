@@ -27,11 +27,9 @@ export const experiences = [
 ];
 
 export const projets = {
-  movie: "https://github.com/illshaad/movie",
-  rh: "https://github.com/illshaad/application-recrutement",
+  movie: "https://illshaad-movie.netlify.app/",
   villeIdeal: "https://github.com/illshaad/projet-ville-ideal-v2",
-  tigato: "https://github.com/illshaad/Tigato",
-  backTigato: "https://github.com/illshaad/micro-back-tigato",
-  food: "https://github.com/illshaad/projet-food",
   portfolio: "https://github.com/illshaad/porfoliot",
+  reservation: "https://reservation-illshaad.netlify.app/",
+  facemash: "https://illshaad-facemash.netlify.app/",
 };

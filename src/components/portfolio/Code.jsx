@@ -11,7 +11,9 @@ export function Code() {
           <div key={index}>
             &nbsp;&nbsp;&nbsp;&nbsp;
             <code className="text-green-600 sm: text-sm">{key}</code>:{" "}
-            <code className="text-blue-600 sm: text-sm">"{value}",</code>
+            <code className=" hover:text-white transition ease-in duration-200  text-blue-600 sm: text-sm">
+              "{value}",
+            </code>
           </div>
         ))}
         <code className="font-bold text-[#8C52FF]">{"}"},</code>
@@ -26,7 +28,7 @@ export function Code() {
               {experience.year}
             </code>
             :{" "}
-            <code className="text-blue-600  sm: text-sm">
+            <code className=" hover:text-white transition ease-in duration-200  text-blue-600 sm: text-sm text-blue-600  sm: text-sm">
               "{experience.role} @ {experience.company}",
             </code>
           </div>
@@ -40,7 +42,7 @@ export function Code() {
           <div key={index}>
             &nbsp;&nbsp;&nbsp;&nbsp;
             <code className="text-green-600  sm: text-sm">{key}</code>:{" "}
-            <code className="text-blue-600  sm: text-sm ">
+            <code className="text-blue-600 hover:text-white transition ease-in duration-200  text-blue-600 sm: text-sm sm: text-sm ">
               <a href={value} target="_blank" rel="noreferrer">
                 "{value}"
               </a>
